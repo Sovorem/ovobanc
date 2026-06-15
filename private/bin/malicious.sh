@@ -18,7 +18,7 @@ ignore_sigint() {
 if [ "$1" = "force" ]; then
     # Ignoring SIGINT (Ctrl+C) with custom function
     trap ignore_sigint SIGINT
-    echo "SIGINT-ն անտեսվում ա 'force' argument-ի պատճառով"
+    echo "SIGINT-ն անտեսվում է 'force' argument-ի պատճառով"
 else
     # Normal SIGINT handling
     trap handle_sigint SIGINT
